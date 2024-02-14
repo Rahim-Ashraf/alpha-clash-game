@@ -1,3 +1,117 @@
+// added extra comments
+// ______________________________________________________________________
+
+// function playingGame(){
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random()*25);
+//     for(let i = 0; i < alphabets.length; i++){
+//         return "The alphabet :"+alphabets[randomIndex];
+//     }
+// }
+// console.log(playingGame())
+
+// let prvTextAlphabet = getRandomAlphabet();
+// // getting random alphabet for deploing on the display
+// function getRandomAlphabet() {
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz/";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random() * 26);
+//     for (let i = 0; i < alphabets.length; i++) {
+//         return alphabets[randomIndex];
+//     }
+// }
+
+// function playingGame(){
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random()*25);
+//     for(let i = 0; i < alphabets.length; i++){
+//         return "The alphabet :"+alphabets[randomIndex];
+//     }
+// }
+// console.log(playingGame())
+
+// let prvTextAlphabet = getRandomAlphabet();
+// // getting random alphabet for deploing on the display
+// function getRandomAlphabet() {
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz/";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random() * 26);
+//     for (let i = 0; i < alphabets.length; i++) {
+//         return alphabets[randomIndex];
+//     }
+// }
+
+
+// function playingGame(){
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random()*25);
+//     for(let i = 0; i < alphabets.length; i++){
+//         return "The alphabet :"+alphabets[randomIndex];
+//     }
+// }
+// console.log(playingGame())
+
+// let prvTextAlphabet = getRandomAlphabet();
+// // getting random alphabet for deploing on the display
+// function getRandomAlphabet() {
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz/";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random() * 26);
+//     for (let i = 0; i < alphabets.length; i++) {
+//         return alphabets[randomIndex];
+//     }
+// }
+
+
+// function playingGame(){
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random()*25);
+//     for(let i = 0; i < alphabets.length; i++){
+//         return "The alphabet :"+alphabets[randomIndex];
+//     }
+// }
+// console.log(playingGame())
+
+// let prvTextAlphabet = getRandomAlphabet();
+// // getting random alphabet for deploing on the display
+// function getRandomAlphabet() {
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz/";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random() * 26);
+//     for (let i = 0; i < alphabets.length; i++) {
+//         return alphabets[randomIndex];
+//     }
+// }
+
+// function playingGame(){
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random()*25);
+//     for(let i = 0; i < alphabets.length; i++){
+//         return "The alphabet :"+alphabets[randomIndex];
+//     }
+// }
+// console.log(playingGame())
+
+// let prvTextAlphabet = getRandomAlphabet();
+// // getting random alphabet for deploing on the display
+// function getRandomAlphabet() {
+//     const alphabetString = "abcdefghijklmnopqrstuvwxyz/";
+//     const alphabets = alphabetString.split("");
+//     const randomIndex = Math.round(Math.random() * 26);
+//     for (let i = 0; i < alphabets.length; i++) {
+//         return alphabets[randomIndex];
+//     }
+// }
+// ________________________________________________________________________
+
+
+
+
 
 // function playingGame(){
 //     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
