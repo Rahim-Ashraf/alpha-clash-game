@@ -1,69 +1,6 @@
 // added extra comments
 // ______________________________________________________________________
 
-// function playingGame(){
-//     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
-//     const alphabets = alphabetString.split("");
-//     const randomIndex = Math.round(Math.random()*25);
-//     for(let i = 0; i < alphabets.length; i++){
-//         return "The alphabet :"+alphabets[randomIndex];
-//     }
-// }
-// console.log(playingGame())
-
-// let prvTextAlphabet = getRandomAlphabet();
-// // getting random alphabet for deploing on the display
-// function getRandomAlphabet() {
-//     const alphabetString = "abcdefghijklmnopqrstuvwxyz/";
-//     const alphabets = alphabetString.split("");
-//     const randomIndex = Math.round(Math.random() * 26);
-//     for (let i = 0; i < alphabets.length; i++) {
-//         return alphabets[randomIndex];
-//     }
-// }
-
-// function playingGame(){
-//     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
-//     const alphabets = alphabetString.split("");
-//     const randomIndex = Math.round(Math.random()*25);
-//     for(let i = 0; i < alphabets.length; i++){
-//         return "The alphabet :"+alphabets[randomIndex];
-//     }
-// }
-// console.log(playingGame())
-
-// let prvTextAlphabet = getRandomAlphabet();
-// // getting random alphabet for deploing on the display
-// function getRandomAlphabet() {
-//     const alphabetString = "abcdefghijklmnopqrstuvwxyz/";
-//     const alphabets = alphabetString.split("");
-//     const randomIndex = Math.round(Math.random() * 26);
-//     for (let i = 0; i < alphabets.length; i++) {
-//         return alphabets[randomIndex];
-//     }
-// }
-
-
-// function playingGame(){
-//     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
-//     const alphabets = alphabetString.split("");
-//     const randomIndex = Math.round(Math.random()*25);
-//     for(let i = 0; i < alphabets.length; i++){
-//         return "The alphabet :"+alphabets[randomIndex];
-//     }
-// }
-// console.log(playingGame())
-
-// let prvTextAlphabet = getRandomAlphabet();
-// // getting random alphabet for deploing on the display
-// function getRandomAlphabet() {
-//     const alphabetString = "abcdefghijklmnopqrstuvwxyz/";
-//     const alphabets = alphabetString.split("");
-//     const randomIndex = Math.round(Math.random() * 26);
-//     for (let i = 0; i < alphabets.length; i++) {
-//         return alphabets[randomIndex];
-//     }
-// }
 
 
 // function playingGame(){
@@ -107,9 +44,6 @@
 //         return alphabets[randomIndex];
 //     }
 // }
-// ________________________________________________________________________
-
-
 
 
 
@@ -122,6 +56,14 @@
 //     }
 // }
 // console.log(playingGame())
+
+
+
+const audio = new Audio();
+function playAudio(url) {
+    audio.src = (url);
+    audio.play();
+}
 
 let prvTextAlphabet = getRandomAlphabet();
 // getting random alphabet for deploing on the display
@@ -148,7 +90,11 @@ const textAlphabet = document.getElementById("random-alphabet");
 
 // playing game
 
-
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        startPlay()
+    }
+})
 function startPlay() {
     hideElement("alpha-dashboard");
     showElement("alpha-play");
@@ -159,12 +105,17 @@ function startPlay() {
 
 // maching deployed key to display key
 
-function playingGame(){
+function playingGame() {
+
     document.addEventListener("keydown", function (e) {
+        const life = document.getElementById("life");
+        parseInt(life.innerText);
+        if (life.innerText <= 0) {
+            return;
+        }
         const theKey = e.key;
         const displayAlphabet = document.getElementById("random-alphabet").innerText.toLowerCase();
         prvTextAlphabet = textAlphabet.innerText.toLowerCase();
-        console.log(theKey, displayAlphabet)
         if (theKey === displayAlphabet) {
             textAlphabet.innerText = getRandomAlphabet();
             setBackground(textAlphabet.innerText.toLowerCase());
@@ -172,7 +123,8 @@ function playingGame(){
             const score = document.getElementById("score");
             let scoreInt = parseInt(score.innerText);
             score.innerText = scoreInt + 1;
-    
+
+            playAudio("../Audio/success.mp3");
             document.getElementById("total-score").innerText = score.innerText;
         } else {
             const life = document.getElementById("life");
@@ -182,11 +134,12 @@ function playingGame(){
                 hideElement("alpha-play");
                 showElement("alpha-score");
             }
+            playAudio("../Audio/wrong.mp3");
         }
     })
 }
 
-document.getElementById("play-again").addEventListener("click", function (){
+document.getElementById("play-again").addEventListener("click", function () {
     document.getElementById("score").innerText = 0;
     document.getElementById("life").innerText = 5;
     hideElement("alpha-score");
